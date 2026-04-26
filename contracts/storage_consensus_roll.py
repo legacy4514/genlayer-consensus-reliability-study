@@ -42,7 +42,7 @@ class StorageConsensusRoll(gl.Contract):
         """Always produces wrong schema key — should fail consensus, no state commit."""
 
         def nondet_fn():
-            return json.dumps({"value": random.randint(1, 6)})  # ❌ wrong key always
+            return json.dumps({"value": random.randint(1, 6)})  # wrong key always
 
         def validator_fn(leader_result):
             try:
