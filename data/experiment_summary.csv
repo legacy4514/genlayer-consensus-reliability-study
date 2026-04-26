@@ -1,0 +1,6 @@
+phase,contract,runs,total_validators,total_agree,total_disagree,nondet_disagree_count,output_format,validator_criterion,reliability
+1A,StableDieRoll,3,15,15,0,0,raw string,range check 1-6,high
+1B,UnstableDieRoll,3,15,6,9,9,raw string,exact match random,low intentional
+2,StructuredDieRoll,3,15,15,0,0,json roll,schema + range check,high
+3,BrokenSchemaRoll,3,15,10,5,5,json mixed keys,strict schema,conditional
+8,StorageConsensusRoll,N/A,N/A,N/A,N/A,N/A,json,state atomicity,verified

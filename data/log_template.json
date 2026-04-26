@@ -1,0 +1,17 @@
+{
+  "contract": "",
+  "phase": "",
+  "run": 1,
+  "leader_eq_output_base64": "",
+  "decoded_leader_output": "",
+  "votes": {
+    "agree": 0,
+    "disagree": 0
+  },
+  "nondet_disagreement_count": 0,
+  "consensus_result": "",
+  "execution_result": "",
+  "state_before": {},
+  "state_after": {},
+  "notes": ""
+}
