@@ -22,9 +22,9 @@ class BrokenSchemaRoll(gl.Contract):
             roll = random.randint(1, 6)
             # 50% chance of producing wrong schema key
             if random.random() < 0.5:
-                return json.dumps({"value": roll})   # ❌ wrong key — should be "roll"
+                return json.dumps({"value": roll})   # wrong key — should be "roll"
             else:
-                return json.dumps({"roll": roll})    # ✅ correct schema
+                return json.dumps({"roll": roll})    # correct schema
 
         def validator_fn(leader_result):
             try:
