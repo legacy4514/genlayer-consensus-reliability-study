@@ -39,7 +39,7 @@ class StorageConsensusRoll(gl.Contract):
 
     @gl.public.write
     def roll_broken(self) -> None:
-        """Always produces wrong schema key — should fail consensus, no state commit."""
+        """Always produces wrong schema key should fail consensus, no state commit."""
 
         def nondet_fn():
             return json.dumps({"value": random.randint(1, 6)})  # wrong key always
